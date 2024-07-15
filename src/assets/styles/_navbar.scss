@@ -1,0 +1,16 @@
+.nav-bar{
+    .nav-list{
+        display: flex;
+        gap: 2rem;
+        list-style:none;
+        justify-content:flex-end;
+        .nav{
+            color: #fff;
+            display: grid;
+            place-content: center;
+            margin: 0;
+
+        }
+        
+    }
+}
