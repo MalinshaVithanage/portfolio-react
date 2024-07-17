@@ -4,6 +4,11 @@
         gap: 2rem;
         list-style:none;
         justify-content:flex-end;
+        @media (max-width:576px) {
+            gap: 0rem;
+            text-align: center;
+        }
+        
         .nav{
             color: #fff;
             display: grid;
@@ -13,4 +18,8 @@
         }
         
     }
+}
+.navbar-nav .nav-link.active,.navbar-nav .nav-link:hover{
+    color: $primary_color;
+ text-shadow: 2px 2px $secondary_color;
 }
