@@ -1,0 +1,128 @@
+.hero-section {
+  background-image: url("../images/background-image.svg");
+  background-size: cover;
+  background-color: #000000;
+  background-blend-mode: hard-light;
+  .hero-content {
+    color: $text_primary_color;
+    padding: 50px 50px;
+    text-align: center;
+    .hero-content-title {
+      font-size: 35px;
+      font-weight: normal;
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      .hero-content-name {
+        font-size: 50px;
+        font-weight: bolder;
+        color: $primary_color;
+      }
+    }
+    .hero-content-description {
+      font-size: 35px;
+      font-weight: bold;
+    }
+    .hero-content-button {
+      display: flex;
+      gap: 18px;
+      justify-content: center;
+
+      .btn {
+        box-shadow: 0px 0px 3px 2px $secondary_color;
+      }
+    }
+    .social-media-logo {
+    
+      width: 220px;
+.a{
+    .img{
+        background-color: #ffffff;
+        /* padding: 30px; */
+        border-radius: 50px;
+    }
+}
+.img{
+    background-color: #ffffff;
+    /* padding: 30px; */
+    border-radius: 50px;
+}
+    }
+  }
+  .my-photo-container {
+    display: flex;
+    justify-content: center;
+    padding: 100px 50px;
+    position: relative;
+
+    @media (max-width: 576px) {
+      padding: 100px;
+    }
+    .my-photo {
+      width: 400px;
+      height: 400px;
+      margin: 30px;
+      border-radius: 50%;
+      box-shadow: 0px 0px 3px 2px $secondary_color;
+      animation: glow 3.5s linear infinite alternate;
+
+      @media (max-width: 576px) {
+        width: 200px;
+        height: 200px;
+      }
+    }
+
+    @keyframes glow {
+      to {
+        box-shadow: 0px 0px 20px 10px $secondary_color;
+      }
+    }
+    .word {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      font-size: 16px;
+      font-weight: bold;
+      color: #000000;
+      background-color: #ffffff;
+      padding: 5px 20px;
+      box-shadow: 0px 0px 2px 1px $primary_color;
+      border-radius: 20px;
+    }
+
+    .word1 {
+      top: 10%;
+      left: 50%;
+    }
+
+    .word2 {
+      top: 50%;
+      left: 75%;
+    }
+
+    .word3 {
+      top: 90%;
+      left: 50%;
+    }
+
+    .word4 {
+      top: 75%;
+      left: 70%;
+    }
+    .word5 {
+      top: 25%;
+      left: 70%;
+    }
+    .word6 {
+      top: 75%;
+      left: 28%;
+    }
+    .word7 {
+      top: 25%;
+      left: 30%;
+    }
+    .word8 {
+      top: 50%;
+      left: 25%;
+    }
+  }
+}
