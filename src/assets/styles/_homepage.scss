@@ -33,20 +33,9 @@
       }
     }
     .social-media-logo {
-    
-      width: 220px;
-.a{
-    .img{
-        background-color: #ffffff;
-        /* padding: 30px; */
-        border-radius: 50px;
-    }
-}
-.img{
-    background-color: #ffffff;
-    /* padding: 30px; */
-    border-radius: 50px;
-}
+      display: flex;
+      justify-content: center;
+      gap: 18px;
     }
   }
   .my-photo-container {

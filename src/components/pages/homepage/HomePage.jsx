@@ -2,24 +2,27 @@ import React from "react";
 import NavBar from "../Navbar";
 import Image from "react-bootstrap/Image";
 import MyPhoto1 from "../../../assets/images/my-photo-1.jpeg";
-import { Button, Container, Row, Col } from "react-bootstrap";
-import LinkedInLogo from "../../../assets/icons/social-media-icons/linkedin.svg";
-import GithubLogo from "../../../assets/icons/social-media-icons/github.svg";
-import StackOverFlowLogo from "../../../assets/icons/social-media-icons/stack-overflow.svg";
+import { Button, Container} from "react-bootstrap";
+import { ImLinkedin } from "react-icons/im";
+import { FaGithub } from "react-icons/fa";
+import { FaStackOverflow } from "react-icons/fa";
+import { IconContext } from "react-icons";
+import About from "../About"
+
 function HomePage() {
   return (
     <div>
       <NavBar />
       <section className="hero-section">
         <Container>
-          <div class="hero-content">
+          <div className="hero-content">
             <div className="hero-content-title ">
               Hello, It's Me : &nbsp;{" "}
               <div className="hero-content-name">Malinsha Vithanage</div>
             </div>
 
             <div className="hero-content-description mt-2">
-              Full-Stack Software Engineer | Third-year undergraduate |
+              Full-Stack Software Engineer |<br /> Third-year undergraduate |
               Volunteer{" "}
             </div>
             <div className="hero-content-button mt-4">
@@ -27,25 +30,25 @@ function HomePage() {
               {"          "}
               <Button variant="outline-success">Hire Me</Button>{" "}
             </div>
-            <div class="social-media-logo">
-              <Row>
-                <Col>
-                  {" "}
-                  <a href="https://www.linkedin.com/in/malinsha-vithanage/">
-                    <Image src={LinkedInLogo}></Image>
-                  </a>
-                </Col>
-                <Col>
-                  <a href="https://stackoverflow.com/users/20555252/malinsha-vithanage">
-                    <Image src={StackOverFlowLogo}></Image>
-                  </a>
-                </Col>
-                <Col>
-                  <a href="https://github.com/MalinshaVithanage">
-                    <Image src={GithubLogo}></Image>
-                  </a>
-                </Col>
-              </Row>
+            <div className="social-media-logo mt-4">
+              <IconContext.Provider value={{ color: "#57f064", size: "30px" }}>
+                <a href="https://www.linkedin.com/in/malinsha-vithanage/">
+                  {/* <Image src={LinkedInLogo}></Image> */}
+                  <ImLinkedin className="social-media-icon" />
+                </a>
+              </IconContext.Provider>
+              <IconContext.Provider value={{ color: "#57f064", size: "30px" }}>
+                <a href="https://stackoverflow.com/users/20555252/malinsha-vithanage">
+                  {/* <Image src={StackOverFlowLogo}></Image> */}
+                  < FaStackOverflow className="social-media-icon" />
+                </a>
+              </IconContext.Provider>
+              <IconContext.Provider value={{ color: "#57f064", size: "30px" }}>
+                <a href="https://github.com/MalinshaVithanage">
+                  {/* <Image src={GithubLogo}></Image> */}
+                  <FaGithub className="social-media-icon" />
+                </a>
+              </IconContext.Provider>
             </div>
           </div>
           <div className="my-photo-container glowing">
@@ -61,6 +64,8 @@ function HomePage() {
           </div>
         </Container>
       </section>
+     <About></About>
+
     </div>
   );
 }
