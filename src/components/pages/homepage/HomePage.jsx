@@ -8,7 +8,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaStackOverflow } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import About from "../About"
-import Projects from "../Projects";
+import Projects from "../projects/Projects";
 function HomePage() {
   return (
     <div>

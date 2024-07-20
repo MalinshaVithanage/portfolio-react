@@ -1,0 +1,203 @@
+
+  .projects-section{
+    margin-top: 100px;
+    .fx-wrap {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+      }
+
+
+    @font-face {
+        font-family: 'Clip';
+      src: url('../../../public/fonts/clip.ttf') format('truetype');
+      }
+    
+      .sign {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 50%;
+        background-image: radial-gradient(
+          ellipse 50% 35% at 50% 50%,
+          #0b3315,
+          transparent
+        );
+        transform: translate(-50%, -50%);
+        letter-spacing: 2;
+        left: 50%;
+        font-family: "Clip";
+        text-transform: uppercase;
+        font-size: 45px;
+        color: #e9ffe6;
+        text-shadow: 0 0 0.3rem #e9ffe6;
+        animation: shine 2s forwards, flicker 3s infinite;
+      }
+    
+      @keyframes blink {
+        0%,
+        22%,
+        36%,
+        75% {
+          color: #e9ffe6;
+          text-shadow: 0 0 0.3rem #e9ffe6;
+        }
+        28%,
+        33% {
+          color: #8bff65;
+          text-shadow: none;
+        }
+        82%,
+        97% {
+          color: #57ff24;
+          text-shadow: none;
+        }
+      }
+    
+      .flicker {
+        animation: shine 2s forwards, blink 3s 2s infinite;
+      }
+    
+      .fast-flicker {
+        animation: shine 2s forwards, blink 10s 1s infinite;
+      }
+    
+      @keyframes shine {
+        0% {
+          color: #0b3315;
+          text-shadow: none;
+        }
+        100% {
+          color: #e9ffe6;
+          text-shadow: 0 0 0.3rem #e9ffe6;
+        }
+      }
+    
+      @keyframes flicker {
+        from {
+          opacity: 1;
+        }
+    
+        4% {
+          opacity: 0.9;
+        }
+    
+        6% {
+          opacity: 0.85;
+        }
+    
+        8% {
+          opacity: 0.95;
+        }
+    
+        10% {
+          opacity: 0.9;
+        }
+    
+        11% {
+          opacity: 0.922;
+        }
+    
+        12% {
+          opacity: 0.9;
+        }
+    
+        14% {
+          opacity: 0.95;
+        }
+    
+        16% {
+          opacity: 0.98;
+        }
+    
+        17% {
+          opacity: 0.9;
+        }
+    
+        19% {
+          opacity: 0.93;
+        }
+    
+        20% {
+          opacity: 0.99;
+        }
+    
+        24% {
+          opacity: 1;
+        }
+    
+        26% {
+          opacity: 0.94;
+        }
+    
+        28% {
+          opacity: 0.98;
+        }
+    
+        37% {
+          opacity: 0.93;
+        }
+    
+        38% {
+          opacity: 0.5;
+        }
+    
+        39% {
+          opacity: 0.96;
+        }
+    
+        42% {
+          opacity: 1;
+        }
+    
+        44% {
+          opacity: 0.97;
+        }
+    
+        46% {
+          opacity: 0.94;
+        }
+    
+        56% {
+          opacity: 0.9;
+        }
+    
+        58% {
+          opacity: 0.9;
+        }
+    
+        60% {
+          opacity: 0.99;
+        }
+    
+        68% {
+          opacity: 1;
+        }
+    
+        70% {
+          opacity: 0.9;
+        }
+    
+        72% {
+          opacity: 0.95;
+        }
+    
+        93% {
+          opacity: 0.93;
+        }
+    
+        95% {
+          opacity: 0.95;
+        }
+    
+        97% {
+          opacity: 0.93;
+        }
+    
+        to {
+          opacity: 1;
+        }
+      }
+  }
