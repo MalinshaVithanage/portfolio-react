@@ -8,7 +8,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaStackOverflow } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import About from "../About"
-
+import Projects from "../Projects";
 function HomePage() {
   return (
     <div>
@@ -65,6 +65,7 @@ function HomePage() {
         </Container>
       </section>
      <About></About>
+<Projects></Projects>
 
     </div>
   );

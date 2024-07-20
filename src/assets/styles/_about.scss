@@ -1,7 +1,7 @@
 .about-me {
   @font-face {
-    font-family: Clip;
-    src: url("https://acupoftee.github.io/fonts/Clip.ttf");
+    font-family: 'Clip';
+  src: url('../../../public/fonts/clip.ttf') format('truetype');
   }
 
   .sign {
@@ -255,7 +255,8 @@
   .details-section {
     margin: 20px;
     display: flex;
-
+    justify-content: space-between;
+    
     .card {
       position: relative;
       margin: 20px 0;
@@ -280,8 +281,6 @@
       position: relative;
       width: 100%;
       height: 100%;
-    //   border: 3px solid $secondary_color;
-    //   border-radius: 10px;
       box-sizing: border-box;
       position: relative;
       transform-origin: left;
@@ -289,43 +288,33 @@
       transition: 1s cubic-bezier(0.15, 1.7, 0.84, 0.58);
       background: #07250e;
       color: $text-primary-color;
-      font-size: 40px;
+      font-size: 35px;
       text-align: center;
       justify-content: center;
 
       --blur: 1.75rem;
-  --box-blur: calc(0.5 * var(--blur));
-  --glow: var(--color);
-  --size: 12rem;
-  
-  align-items: center;
-  border-radius: 12px;
-  border: 4px solid currentColor;
-  box-shadow: 
+      --box-blur: calc(0.5 * var(--blur));
+      --glow: var(--color);
+      --size: 12rem;
+
+      align-items: center;
+      border-radius: 12px;
+      border: 4px solid currentColor;
+      box-shadow: 
     /* --- "glass" tube --- */
-    /* inside */ inset 0 0 0 2px rgba(0, 0, 0, 0.15),
-    /* outside */      0 0 0 2px rgba(0, 0, 0, 0.15),
-    /* --- glow --- */
-    /* inside */ inset 0 0 var(--box-blur) var(--glow),
-    /* outside */      0 0 var(--box-blur) var(--glow);
-  color: var(--color, white);
-  display: inline-flex;
-  flex-direction: column;
-  --color: #C4C4C6; filter: brightness(105%);
-//   height: var(--size);
-//   justify-content: space-around;
-//   padding: 1rem;
-//   width: var(--size);
-// &.xe { --color: #C4C4C6; filter: brightness(105%); }
+    /* inside */ inset 0 0 0 2px
+          rgba(0, 0, 0, 0.15),
+        /* outside */ 0 0 0 2px rgba(0, 0, 0, 0.15),
+        /* --- glow --- */ /* inside */ inset 0 0 var(--box-blur) var(--glow),
+        /* outside */ 0 0 var(--box-blur) var(--glow);
+      color: var(--color, white);
+      display: inline-flex;
+      flex-direction: column;
+      --color: #c4c4c6;
+      filter: brightness(105%);
+    
     }
-    // .card .Box img {
-    //   position: absolute;
-    //   top: 0;
-    //   left: 0;
-    //   width: 100%;
-    //   height: 100%;
-    //   object-fit: cover;
-    // }
+  
 
     .card:hover .Box {
       transform: rotateY(-135deg);
@@ -337,7 +326,30 @@
       box-sizing: border-box;
       padding: 20px;
       z-index: -1;
-    //   border-radius: 10px;
+      display: grid;
+      margin-bottom: 0;
+      margin-top: 0;
+      height: 100%;
+      .icon-container {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 20px; /* Optional: Add padding if needed */
+      }
+      
+     .details-fact{
+      .detail-title{
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+      }
+      .detail-description{
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: normal;
+      }
+      
+     }
+
     }
   }
 }

@@ -8,13 +8,19 @@ import Photo1 from "../../assets/images/my-photo-1.jpeg";
 import Photo2 from "../../assets/images/my-photo-2.jpeg";
 import Photo3 from "../../assets/images/my-photo-3.jpeg";
 import { CgArrowBottomRightO } from "react-icons/cg";
+import { MdCastForEducation } from "react-icons/md";
+import { IconContext } from "react-icons";
+import { LuArrowUpRightSquare } from "react-icons/lu";
+import { GrAchievement } from "react-icons/gr";
+import { MdOutlineWorkHistory } from "react-icons/md";
+
 function About() {
   return (
     <section className="about-me mt-5 mb-5">
       <Container>
         <div className="sign mt-3">
-          <span class="fast-flicker">A</span>bout &nbsp;
-          <span class="flicker"> M</span>e
+          <span className="fast-flicker">A</span>bout &nbsp;
+          <span className="flicker"> M</span>e
         </div>
         <Row>
           <Col lg={7}>
@@ -58,49 +64,148 @@ function About() {
           </Col>
         </Row>
         <section className="details-section mt-5">
-        <Card>
-           <div className="Box">
-            Education
-            <CgArrowBottomRightO />
-             </div>
+          <Card>
+            <div className="Box">
+              <IconContext.Provider value={{ size: "150px" }}>
+                <MdCastForEducation />
+              </IconContext.Provider>
+              <div className="mt-3">Education</div>
+              <CgArrowBottomRightO />
+            </div>
 
-           <div className="details">
-            <div className="details-fact">
+            <div className="details">
+              <div className="details-fact">
                 <div className="detail-title">
-                University Of Moratuwa, Sri Lanka
+                  B.Sc. (Hons) in Information Technology
                 </div>
                 <div className="detail-description">
-                B.Sc. (Hons) in Information Technology (2021 -2025)
+                  University Of Moratuwa, Sri Lanka (2021 -2025)
                 </div>
-            </div>
-            <div className="details-fact"> 
+              </div>
+              <div className="details-fact">
+                <div className="detail-title">GCE Advanced Level</div>
+                <div className="detail-description">
+                  Southlands College, Galle, Sri Lanka (2005 - 2019)
+                </div>
+              </div>
+              <div className="details-fact">
                 <div className="detail-title">
-                Southlands College, Galle, Sri Lanka
+                  Diploma in Comprehensive Master Java Developer
                 </div>
                 <div className="detail-description">
-                (2005 - 2019)
+                  Institute of Software Engineering, Sri Lanka (2019 - 2020)
                 </div>
-            </div>
-            <div className="details-fact">
+              </div>
+              <div className="details-fact">
                 <div className="detail-title">
-                Institute of Software Engineering, Sri Lanka
+                  Certificate Course in English Language
                 </div>
                 <div className="detail-description">
-                Diploma in Comprehensive Master Java Developer (2019 - 2020)
+                  Aquinas College, Sri Lanka (2019 - 2020)
                 </div>
+              </div>
+              <div className="icon-container">
+                <IconContext.Provider
+                  value={{ color: "#000000", size: "30px" }}
+                >
+                  <a href="https://www.linkedin.com/in/malinsha-vithanage/">
+                    <LuArrowUpRightSquare />
+                  </a>
+                </IconContext.Provider>
+              </div>
             </div>
-            <div className="details-fact">
+          </Card>
+          <Card>
+            <div className="Box">
+              <IconContext.Provider value={{ size: "150px" }}>
+                <GrAchievement />
+              </IconContext.Provider>
+              <div className="mt-3">Achievements </div>
+              <CgArrowBottomRightO />
+            </div>
+
+            <div className="details">
+              <div className="details-fact">
                 <div className="detail-title">
-                Aquinas College, Sri Lanka
+                  2nd Runner Up at PearlHack 2.0
                 </div>
                 <div className="detail-description">
-                (2019 - 2020)
+                  Inter University Ul/UX Designathon, organized by IEEE WIE
+                  Student Branch Affinity Group of SUSL
                 </div>
+              </div>
+              <div className="details-fact">
+                <div className="detail-title">
+                  University Colours for Badminton 2022
+                </div>
+                <div className="detail-description">
+                  Colours Award Ceremony 2022, University Of Moratuwa (2005 -
+                  2019)
+                </div>
+              </div>
+
+              <div className="icon-container">
+                <IconContext.Provider
+                  value={{ color: "#000000", size: "30px" }}
+                >
+                  <a href="https://www.linkedin.com/in/malinsha-vithanage/">
+                    <LuArrowUpRightSquare />
+                  </a>
+                </IconContext.Provider>
+              </div>
             </div>
+          </Card>
+          <Card>
+            <div className="Box">
+              <IconContext.Provider value={{ size: "150px" }}>
+              <MdOutlineWorkHistory />
+              </IconContext.Provider>
+              <div className="mt-3">Experience</div>
+              <CgArrowBottomRightO />
             </div>
-        </Card>
+
+            <div className="details">
+              <div className="details-fact">
+                <div className="detail-title">Software Engineer Intern</div>
+                <div className="detail-description">
+                  Inivos (2024 - Present)
+                </div>
+              </div>
+              <div className="details-fact">
+                <div className="detail-title">
+                  Chapter and Affinity Group Coordinator
+                </div>
+                <div className="detail-description">
+                  IEEE Student Branch - University of Moratuwa(2023 - 2024)
+                </div>
+              </div>
+              <div className="details-fact">
+                <div className="detail-title">
+                  IEEEXtreme Student Ambassador
+                </div>
+                <div className="detail-description">IEEEXtreme 18.0 (2024)</div>
+              </div>
+              <div className="details-fact">
+                <div className="detail-title">Badminton Team player</div>
+                <div className="detail-description">
+                  University of Moratuwa, Sri Lanka
+                </div>
+                <div className="detail-description">
+                  Southlands College, Sri Lanka
+                </div>
+              </div>
+              <div className="icon-container">
+                <IconContext.Provider
+                  value={{ color: "#000000", size: "30px" }}
+                >
+                  <a href="https://www.linkedin.com/in/malinsha-vithanage/">
+                    <LuArrowUpRightSquare />
+                  </a>
+                </IconContext.Provider>
+              </div>
+            </div>
+          </Card>
         </section>
-
       </Container>
     </section>
   );
