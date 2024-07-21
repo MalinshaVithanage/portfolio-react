@@ -7,9 +7,20 @@ import { ImLinkedin } from "react-icons/im";
 import { FaGithub } from "react-icons/fa";
 import { FaStackOverflow } from "react-icons/fa";
 import { IconContext } from "react-icons";
-import About from "../About"
+import About from "../about/About"
 import Projects from "../projects/Projects";
+import CVPDF from '../../../assets/pdfs/malinsha-vithanage-cv.pdf'
+import Contact from "../contact/Contact";
+
 function HomePage() {
+  const onButtonClick = () => {
+    const link = document.createElement("a");
+    link.href = CVPDF;
+    link.download = 'malinsha-vithanage-cv.pdf'; 
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+};
   return (
     <div>
       <NavBar />
@@ -25,10 +36,10 @@ function HomePage() {
               Full-Stack Software Engineer |<br /> Third-year undergraduate |
               Volunteer{" "}
             </div>
-            <div className="hero-content-button mt-4">
-              <Button variant="success">Download My CV</Button>
+            <div className="hero-content-button  mt-4 mt-sm-2 ">
+              <Button variant="success" onClick={onButtonClick}   className="download-button">Download My CV</Button>
               {"          "}
-              <Button variant="outline-success">Hire Me</Button>{" "}
+              <Button variant="outline-success"  href="mailto:malinshkv@gmail.com?subject=Hire%20Me&body=Hi%20Malinsha,%0D%0A%0D%0AI%20am%20interested%20in%20hiring%20you%20for%20a%20project.%0D%0A%0D%0AThanks,%0D%0AYour%20Name">Hire Me</Button>{" "}
             </div>
             <div className="social-media-logo mt-4">
               <IconContext.Provider value={{ color: "#57f064", size: "30px" }}>
@@ -66,7 +77,7 @@ function HomePage() {
       </section>
      <About></About>
 <Projects></Projects>
-
+<Contact/>
     </div>
   );
 }

@@ -5,23 +5,79 @@
   background-blend-mode: hard-light;
   .hero-content {
     color: $text_primary_color;
-    padding: 50px 50px;
     text-align: center;
+
     .hero-content-title {
       font-size: 35px;
       font-weight: normal;
       display: flex;
       align-items: baseline;
       justify-content: center;
+      @media (max-width: 1400px) {
+      }
+      @media (max-width: 1200px) {
+      }
+      @media (max-width: 991px) {
+        font-size: 23px;
+      }
+      @media (max-width: 576px) {
+        font-size: 15px;
+      }
+      @media (max-width: 389px) {
+        font-size: 12px;
+      }
+      @media (min-width: 1700px) {
+        font-size: 55px;
+      }
+      @media (min-width: 2500px) {
+        font-size: 70px;
+      }
       .hero-content-name {
         font-size: 50px;
         font-weight: bolder;
         color: $primary_color;
+        @media (max-width: 1400px) {
+        }
+        @media (max-width: 1200px) {
+        }
+        @media (max-width: 991px) {
+          font-size: 35px;
+        }
+        @media (max-width: 576px) {
+          font-size: 20px;
+        }
+        @media (max-width: 389px) {
+        }
+        @media (min-width: 1700px) {
+          font-size: 65px;
+        }
+        @media (min-width: 2500px) {
+          font-size: 75px;
+        }
       }
     }
     .hero-content-description {
       font-size: 35px;
       font-weight: bold;
+      @media (max-width: 1400px) {
+      }
+      @media (max-width: 1200px) {
+      }
+      @media (max-width: 991px) {
+        font-size: 25px;
+      }
+      @media (max-width: 576px) {
+        font-size: 17px;
+      }
+      @media (max-width: 389px) {
+        font-size: 15px;
+      }
+      @media (min-width: 1700px) {
+        font-size: 45px;
+      }
+      @media (min-width: 2500px) {
+        font-size: 50px;
+      }
     }
     .hero-content-button {
       display: flex;
@@ -30,6 +86,10 @@
 
       .btn {
         box-shadow: 0px 0px 3px 2px $secondary_color;
+        @media (max-width: 576px) {
+          padding: 5px 5px;
+          font-size: 12px;
+        }
       }
     }
     .social-media-logo {
@@ -45,7 +105,7 @@
     position: relative;
 
     @media (max-width: 576px) {
-      padding: 100px;
+      padding: 15px 18px;
     }
     .my-photo {
       width: 400px;
@@ -54,11 +114,30 @@
       border-radius: 50%;
       box-shadow: 0px 0px 3px 2px $secondary_color;
       animation: glow 3.5s linear infinite alternate;
-
+      @media (max-width: 1400px) {
+      }
+      @media (max-width: 1200px) {
+        width: 300px;
+        height: 300px;
+      }
+      @media (max-width: 991px) {
+        width: 200px;
+        height: 200px;
+      }
       @media (max-width: 576px) {
         width: 200px;
         height: 200px;
       }
+      @media (max-width: 389px) {
+  
+      }
+      @media (min-width: 1700px) {
+       
+      }
+      @media (min-width: 2500px) {
+       
+      }
+ 
     }
 
     @keyframes glow {
@@ -76,6 +155,10 @@
       padding: 5px 20px;
       box-shadow: 0px 0px 2px 1px $primary_color;
       border-radius: 20px;
+      @media (max-width: 991px) {
+        font-size: 10px;
+        padding: 5px 15px;
+      }
     }
 
     .word1 {
@@ -113,5 +196,82 @@
       top: 50%;
       left: 25%;
     }
+    @media (max-width: 576px) {
+      .word1 {
+        top: 10%;
+        left: 50%;
+      }
+  
+      .word2 {
+        top: 50%;
+        left: 80%;
+      }
+  
+      .word3 {
+        top: 87%;
+        left: 50%;
+      }
+  
+      .word4 {
+        top: 69%;
+        left: 75%;
+      }
+      .word5 {
+        top: 27%;
+        left: 75%;
+      }
+      .word6 {
+        top: 69%;
+        left: 25%;
+      }
+      .word7 {
+        top: 27%;
+        left: 30%;
+      }
+      .word8 {
+        top: 50%;
+        left: 20%;
+      }
+  
+    }
+    @media (max-width: 367px) {
+      .word1 {
+        top: 10%;
+        left: 50%;
+      }
+  
+      .word2 {
+        top: 50%;
+        left: 90%;
+      }
+  
+      .word3 {
+        top: 87%;
+        left: 50%;
+      }
+  
+      .word4 {
+        top: 69%;
+        left: 80%;
+      }
+      .word5 {
+        top: 27%;
+        left: 85%;
+      }
+      .word6 {
+        top: 69%;
+        left: 18%;
+      }
+      .word7 {
+        top: 27%;
+        left: 24%;
+      }
+      .word8 {
+        top: 50%;
+        left: 12%;
+      }
+  
+    }
+
   }
 }

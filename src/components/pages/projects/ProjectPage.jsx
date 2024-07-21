@@ -4,10 +4,13 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Project1 from "../../../assets/images/Projects images/icatcher.png";
 import Project2 from "../../../assets/images/Projects images/internal_management_system.png";
 import Project3 from "../../../assets/images/Projects images/POS _system.png"
+import NavBar from '../Navbar.jsx';
 
 
-function Projects() {
+function ProjectPage() {
   return (
+    <div>
+        <NavBar/>
     <section className='projects-section'>
       <Container>
       <div className="sign mt-3">
@@ -59,7 +62,9 @@ function Projects() {
 
       </Container>
     </section>
+    </div>
+
   );
 }
 
-export default Projects;
+export default ProjectPage;

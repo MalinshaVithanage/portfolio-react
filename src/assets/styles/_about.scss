@@ -26,6 +26,10 @@
     color: #e9ffe6;
     text-shadow: 0 0 0.3rem #e9ffe6;
     animation: shine 2s forwards, flicker 3s infinite;
+    
+    @media (max-width:576px) {
+      font-size: 25px;
+    }
   }
 
   @keyframes blink {
@@ -195,6 +199,11 @@
   .about-me-description {
     font-size: 20px;
     color: $text-primary-color;
+
+      
+    @media (max-width:576px) {
+      font-size: 12px;
+    }
   }
 
   .swiper {
@@ -256,8 +265,12 @@
   .details-section {
     margin: 20px;
     display: flex;
-    justify-content: space-between;
-
+    justify-content: space-around;
+    flex-wrap: wrap;
+@media (max-width:576px) {
+  
+  justify-content: center;
+}
     .card {
       position: relative;
       margin: 20px 0;
@@ -270,6 +283,8 @@
       box-shadow: inset 300px 0 50px rgba(0, 0, 0, 0.5),
         0 20px 20px rgba(0, 0, 0, 0.5);
       transition: 1s;
+
+     
     }
     .card:hover {
       z-index: 10000;
@@ -313,7 +328,11 @@
       flex-direction: column;
       --color: #c4c4c6;
       filter: brightness(105%);
-    
+
+      .icon-large {
+        font-size: 150px;
+      }
+      
     }
   
 

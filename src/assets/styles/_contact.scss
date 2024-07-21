@@ -1,0 +1,57 @@
+:root {
+    --primary-color: #57f064;
+    --secondary-color: #1b471f;
+  }
+  
+  .contact {
+    padding: 50px 0;
+    text-align: center;
+    color: $text_primary_color;
+  }
+  
+  .contact .heading {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+  }
+  
+  .contact .heading span {
+    color: var(--primary-color);
+  }
+  
+  .contact .contact-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .contact .contact-list li {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+  }
+  
+  .contact .contact-form {
+    margin-top: 1.5rem;
+
+  }
+  .form-control{
+    background-color: $secondary_color;
+    color: $text_primary_color;
+    border-color: $secondary_color;
+    border-radius: 10px;
+    ::placeholder{
+        color: $primary_color;
+    }
+  }
+  .contact .send {
+    background-color: var(--secondary-color);
+    border: none;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+  }
+  
+  .contact .send:hover {
+    background-color: var(--secondary-color);
+  }
+  

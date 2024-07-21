@@ -1,9 +1,9 @@
 import { createBrowserRouter } from "react-router-dom";
 import NotFound from "../components/pages/notFound/NotFound";
 import HomePage from "../components/pages/homepage/HomePage";
-import Contact from "../components/pages/Contact";
-import About from "../components/pages/About";
-import Projects from "../components/pages/projects/Projects";
+import ContactPage from "../components/pages/contact/ContactPage";
+import AboutPage from "../components/pages/about/AboutPage";
+import ProjectPage from "../components/pages/projects/ProjectPage";
 
 
 export const router = createBrowserRouter([
@@ -17,15 +17,15 @@ export const router = createBrowserRouter([
             },
             {
                 path:'/contact',
-                element: <Contact/>
+                element: <ContactPage/>
             },
             {
                 path:'/about',
-                element: <About/>
+                element: <AboutPage/>
             },
             {
                 path:'/projects',
-                element: <Projects/>
+                element: <ProjectPage/>
             }
 
 

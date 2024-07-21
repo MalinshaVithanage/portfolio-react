@@ -1,8 +1,9 @@
 .card-container {
     perspective: 1000px;
     margin: 20px;
-margin-bottom: 100%;
+margin-bottom: 40%;
 height: 200px;
+
   }
   
   .card-flip {
@@ -15,9 +16,16 @@ height: 200px;
   .card-size{
     width: 320px;
     height: 320px;
+
 border-color: $secondary_color;
 border-radius: 10px;
 border: 5px;
+@media (max-width:1200px) {
+  width: 250px;
+}
+@media (max-width:389px) {
+  font-size: 15px;
+}
     .btn{
         background-color: $secondary_color;
         border-color: $secondary_color;

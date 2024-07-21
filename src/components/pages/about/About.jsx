@@ -4,9 +4,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-cards";
 import { EffectCards } from "swiper/modules";
-import Photo1 from "../../assets/images/my-photo-1.jpeg";
-import Photo2 from "../../assets/images/my-photo-2.jpeg";
-import Photo3 from "../../assets/images/my-photo-3.jpeg";
+import Photo1 from "../../../assets/images/my-photo-1.jpeg";
+import Photo2 from "../../../assets/images/my-photo-2.jpeg";
+import Photo3 from "../../../assets/images/my-photo-3.jpeg";
 import { CgArrowBottomRightO } from "react-icons/cg";
 import { MdCastForEducation } from "react-icons/md";
 import { IconContext } from "react-icons";
@@ -16,6 +16,7 @@ import { MdOutlineWorkHistory } from "react-icons/md";
 
 function About() {
   return (
+
     <section className="about-me mt-5 mb-5">
       <Container>
         <div className="sign mt-3">
@@ -24,7 +25,7 @@ function About() {
         </div>
         <Row>
           <Col lg={7}>
-            <div className="about-me-description mt-3">
+            <div className="about-me-description mt-3 mb-3">
               As a third-year undergraduate at the Faculty of Information
               Technology, University of Moratuwa, I'm passionate about software
               engineering and eager to make a mark in the tech world. Equipped
@@ -66,7 +67,7 @@ function About() {
         <section className="details-section mt-5">
           <Card>
             <div className="Box">
-              <IconContext.Provider value={{ size: "150px" }}>
+              <IconContext.Provider value={{ className: "icon-large icon-medium icon-small" }}>
                 <MdCastForEducation />
               </IconContext.Provider>
               <div className="mt-3">Education</div>
@@ -117,7 +118,7 @@ function About() {
           </Card>
           <Card>
             <div className="Box">
-              <IconContext.Provider value={{ size: "150px" }}>
+              <IconContext.Provider value={{ className: "icon-large icon-medium icon-small"}}>
                 <GrAchievement />
               </IconContext.Provider>
               <div className="mt-3">Achievements </div>
@@ -157,7 +158,7 @@ function About() {
           </Card>
           <Card>
             <div className="Box">
-              <IconContext.Provider value={{ size: "150px" }}>
+              <IconContext.Provider value={{ className: "icon-large icon-medium icon-small" }}>
               <MdOutlineWorkHistory />
               </IconContext.Provider>
               <div className="mt-3">Experience</div>
