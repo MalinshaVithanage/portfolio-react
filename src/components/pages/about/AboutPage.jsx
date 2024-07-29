@@ -13,7 +13,7 @@ import { IconContext } from "react-icons";
 import { LuArrowUpRightSquare } from "react-icons/lu";
 import { GrAchievement } from "react-icons/gr";
 import { MdOutlineWorkHistory } from "react-icons/md";
-import NavBar from "../Navbar";
+import NavBar from "../../common/Navbar";
 function About() {
   return (
 <div>

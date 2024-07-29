@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Form, Button, Container} from 'react-bootstrap';
-import NavBar from '../Navbar';
+import NavBar from '../../common/Navbar';
 
 const ContactPage = () => {
   const [msg, setMsg] = useState('');
