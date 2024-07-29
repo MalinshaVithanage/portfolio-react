@@ -1,5 +1,5 @@
 import React from "react";
-import NavBar from "../Navbar";
+import NavBar from "../../common/Navbar";
 import Image from "react-bootstrap/Image";
 import MyPhoto1 from "../../../assets/images/my-photo-1.jpeg";
 import { Button, Container} from "react-bootstrap";
@@ -11,6 +11,7 @@ import About from "../about/About"
 import Projects from "../projects/Projects";
 import CVPDF from '../../../assets/pdfs/malinsha-vithanage-cv.pdf'
 import Contact from "../contact/Contact";
+import Hero from "./Hero";
 
 function HomePage() {
   const onButtonClick = () => {
@@ -24,8 +25,10 @@ function HomePage() {
   return (
     <div>
       <NavBar />
+
       <section className="hero-section">
         <Container>
+        <Hero/>
           <div className="hero-content">
             <div className="hero-content-title ">
               Hello, It's Me : &nbsp;{" "}
@@ -33,13 +36,12 @@ function HomePage() {
             </div>
 
             <div className="hero-content-description mt-2">
-              Full-Stack Software Engineer |<br /> Third-year undergraduate |
-              Volunteer{" "}
+              Full-Stack Software Engineer | Undergraduate | Volunteer{" "}
             </div>
             <div className="hero-content-button  mt-4 mt-sm-2 ">
               <Button variant="success" onClick={onButtonClick}   className="download-button">Download My CV</Button>
               {"          "}
-              <Button variant="outline-success"  href="mailto:malinshkv@gmail.com?subject=Hire%20Me&body=Hi%20Malinsha,%0D%0A%0D%0AI%20am%20interested%20in%20hiring%20you%20for%20a%20project.%0D%0A%0D%0AThanks,%0D%0AYour%20Name">Hire Me</Button>{" "}
+              <Button variant="outline-success"  href="mailto:malinshkv@gmail.com?subject=Hire%20Me&body=Hi%20Malinsha,%0D%0A%0D%0AI%20am%20interested%20in%20hiring%20you%20for%20a%20project.%0D%0A%0D%0AThanks,%0D%0AYour%20Name" className="download-button">Hire Me</Button>{" "}
             </div>
             <div className="social-media-logo mt-4">
               <IconContext.Provider value={{ color: "#57f064", size: "30px" }}>
@@ -62,7 +64,7 @@ function HomePage() {
               </IconContext.Provider>
             </div>
           </div>
-          <div className="my-photo-container glowing">
+          {/* <div className="my-photo-container glowing">
             <Image src={MyPhoto1} roundedCircle className="my-photo " />
             <div className="word word1">ReactJS</div>
             <div className="word word2">Angular</div>
@@ -72,7 +74,7 @@ function HomePage() {
             <div className="word word6">TypeScript</div>
             <div className="word word7">ML</div>
             <div className="word word8">MySQL</div>
-          </div>
+          </div> */}
         </Container>
       </section>
      <About></About>
