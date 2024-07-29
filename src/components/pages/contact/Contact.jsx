@@ -30,16 +30,16 @@ const Contact = () => {
         <div className="contact-form">
           <Form onSubmit={handleSubmit} name="submit-to-google-sheet">
             <Form.Group controlId="formName" className='mb-3'>
-              <Form.Control type="text" name="Name" placeholder="Enter Your Name" required />
+              <Form.Control type="text" name="Name" placeholder="Enter Your Name" required  className="custom-placeholder"/>
             </Form.Group>
             <Form.Group controlId="formEmail" className='mb-3'>
-              <Form.Control type="email" name="Email" placeholder="Enter Your Email" required />
+              <Form.Control type="email" name="Email" placeholder="Enter Your Email" required className="custom-placeholder"/>
             </Form.Group>
             <Form.Group controlId="formSubject" className='mb-3'>
-              <Form.Control type="text" name="Subject" placeholder="Enter Your Subject" />
+              <Form.Control type="text" name="Subject" placeholder="Enter Your Subject" className="custom-placeholder"/>
             </Form.Group>
             <Form.Group controlId="formMessage" className='mb-3'>
-              <Form.Control as="textarea" name="Message" rows={5} placeholder="Enter Your Message" required />
+              <Form.Control as="textarea" name="Message" rows={5} placeholder="Enter Your Message" required className="custom-placeholder"/>
             </Form.Group>
             <Button type="submit" className="send">Submit</Button>
           </Form>

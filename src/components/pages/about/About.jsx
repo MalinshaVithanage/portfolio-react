@@ -7,6 +7,10 @@ import { EffectCards } from "swiper/modules";
 import Photo1 from "../../../assets/images/my-photo-1.jpeg";
 import Photo2 from "../../../assets/images/my-photo-2.jpeg";
 import Photo3 from "../../../assets/images/my-photo-3.jpeg";
+import Photo4 from "../../../assets/images/my-photo-4.JPG";
+import Photo5 from "../../../assets/images/my-photo-5.JPG";
+import Photo6 from "../../../assets/images/my-photo-6.jpeg";
+import Photo7 from "../../../assets/images/my-photo-7.HEIC";
 import { CgArrowBottomRightO } from "react-icons/cg";
 import { MdCastForEducation } from "react-icons/md";
 import { IconContext } from "react-icons";
@@ -16,7 +20,6 @@ import { MdOutlineWorkHistory } from "react-icons/md";
 
 function About() {
   return (
-
     <section className="about-me mt-5 mb-5">
       <Container>
         <div className="sign mt-3">
@@ -55,19 +58,28 @@ function About() {
               <SwiperSlide>
                 <Image src={Photo3} className="about-me-photo"></Image>
               </SwiperSlide>
-              {/* <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide> */}
+              <SwiperSlide>
+                <Image src={Photo4} className="about-me-photo"></Image>
+              </SwiperSlide>
+              <SwiperSlide>
+                <Image src={Photo5} className="about-me-photo"></Image>
+              </SwiperSlide>
+              <SwiperSlide>
+                <Image src={Photo6} className="about-me-photo"></Image>
+              </SwiperSlide>
+              <SwiperSlide>
+                <Image src={Photo7} className="about-me-photo"></Image>
+              </SwiperSlide>
+              {/* <SwiperSlide>Slide 9</SwiperSlide> */}
             </Swiper>
           </Col>
         </Row>
         <section className="details-section mt-5">
           <Card>
             <div className="Box">
-              <IconContext.Provider value={{ className: "icon-large icon-medium icon-small" }}>
+              <IconContext.Provider
+                value={{ className: "icon-large icon-medium icon-small" }}
+              >
                 <MdCastForEducation />
               </IconContext.Provider>
               <div className="mt-3">Education</div>
@@ -118,7 +130,9 @@ function About() {
           </Card>
           <Card>
             <div className="Box">
-              <IconContext.Provider value={{ className: "icon-large icon-medium icon-small"}}>
+              <IconContext.Provider
+                value={{ className: "icon-large icon-medium icon-small" }}
+              >
                 <GrAchievement />
               </IconContext.Provider>
               <div className="mt-3">Achievements </div>
@@ -158,8 +172,10 @@ function About() {
           </Card>
           <Card>
             <div className="Box">
-              <IconContext.Provider value={{ className: "icon-large icon-medium icon-small" }}>
-              <MdOutlineWorkHistory />
+              <IconContext.Provider
+                value={{ className: "icon-large icon-medium icon-small" }}
+              >
+                <MdOutlineWorkHistory />
               </IconContext.Provider>
               <div className="mt-3">Experience</div>
               <CgArrowBottomRightO />

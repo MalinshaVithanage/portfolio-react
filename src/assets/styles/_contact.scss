@@ -1,6 +1,5 @@
 :root {
-    --primary-color: #57f064;
-    --secondary-color: #1b471f;
+    --primary-color: #508e55;
   }
   
   .contact {
@@ -32,17 +31,22 @@
   
   .contact .contact-form {
     margin-top: 1.5rem;
-
+    margin-bottom: 100px;
+    text-align: -webkit-center;
   }
   .form-control{
-    background-color: $secondary_color;
+    background-color: #508e55;
     color: $text_primary_color;
     border-color: $secondary_color;
     border-radius: 10px;
-    ::placeholder{
-        color: $primary_color;
-    }
+    width: 75%;
+ 
   }
+  .custom-placeholder::placeholder {
+    color: white;
+    opacity: 1;
+  }
+  
   .contact .send {
     background-color: var(--secondary-color);
     border: none;
